@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"/>
     <!-- codigo de colores y estilos escrito por nosotros -->
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 	<link rel="stylesheet" href="css/nav.css" />
     <!-- Tipografia openSans -->
     <link href=" " rel="stylesheet" />
@@ -17,37 +18,32 @@
   </head>
   <!-- <body> Todo lo que se ve en la pantalla del usuario -->
   <body>
-    <nav>
-      <div class="container-fluid">
-        <div class="row top">
-          <!-- en esta linea cambiamos nuestro logo. -->
-          <div class="col-md-3">
-            <a href="#home" data-ancla="home" class="off">
-              <img src="images/logolali.jpg" alt="" class="logo"/></a>
-          </div>
-          <div class="col-md-9 d-flex justify-content-end align-items-center">
-            <ul class="botonera">
-              <li class="m-3">
-                <a href="#nosotros" data-ancla="nosotros"> Nuestra filosofía</a>
-              </li>
-              <li class="m-3">
-                <a href="#servicios" data-ancla="servicios"> Sobre nosotros </a>
-              </li>
-              <li class="m-3">
-                <a href="#contacto" data-ancla="contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="logo" href="#"><img src="images/logo.png" alt="" class="logo"/></a></a>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link"  href="#contacto" data-ancla="contacto"><span >Contacto</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#nosotros" data-ancla="contacto"><span >Nosotros</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#servicios" data-ancla="contacto"><span >Servicios</span></a>
+          </li>
+        </ul>
       </div>
     </nav>
-
     <header class="vertical-centered-text" id="home">
 		<div class="card flex-column justify-content-center align-items-start p-5">
 			<div class="row m-auto">
 
-				<div class="col-md-9 col-sm-12">
-					<h1>Tejidos Lali</h1>
+				<div class="col-md-6 col-sm-12">
+          <img src="images/logo.png" alt="" class="header-logo"/></a>
 					<h4>
 						Somos una empresa familiar de tejidos y crochet ubicada en la zona
 						oeste de buenos aires
@@ -64,6 +60,7 @@
 
     <div class="nosotros orange" id="nosotros">
       <div class="container">
+        <img class="icon" src="images/icons/customer.svg">
         <h1>Atención personalizada</h1>
         <p>
           Realizamos pedidos personalizados completamente a tu gusto: podes
@@ -125,7 +122,9 @@
         </div>
         <div class="row social">
           <div class="col-4">
-            <a href="mailto:crochetsytejidoslali@gmail.com"><img src="images/001-mail.svg" alt=""/></a>
+            <a href="mailto:crochetsytejidoslali@gmail.com">
+              <img src="images/001-mail.svg" alt=""/>
+            </a>
           </div>
 
           <div class="col-4">

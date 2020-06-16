@@ -14,19 +14,24 @@
     justify-content: center;
     align-items: center;
   }
-  
+  header .header-logo{
+    margin-bottom: 2em;
+    width: 60%;
+  }
   header .btn {
     border-radius: 20px;
-    border: 1px solid white;
+    border: 1px solid var(--primary);
     background: transparent;
-    color: white;
+    color: var(--primary);
     margin: 1em 0;
+    font-size: 20px;
   }
   
   header .btn:hover {
     border-radius: 20px;
-    background: white;
-    color: var(--primary);
+    background: var(--primary);
+    color: white;
+    border: 1px solid white;
   }
   
   header h1 {

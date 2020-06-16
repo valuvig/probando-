@@ -1,5 +1,5 @@
 :root {
-  --primary: #ce93d8;
+  --primary: #EB5B64;
   --secondary: #e8e8e8;
 }
 
@@ -21,27 +21,6 @@ body {
   display: none;
 }
 
-.botonera li {
-  display: inline-block;
-  margin-left: 8px;
-  font-weight: 700;
-  font-size: 20px;
-}
-.botonera li a {
-  color: white;
-}
-.botonera li a:hover {
-  color: #ff88e1;
-  text-decoration: none;
-}
-
-.vertical-centered-text {
-  -ms-display: flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .cta {
   text-align: left;
 }
@@ -53,29 +32,35 @@ h1 {
 
 h2 {
   font-size: 50px;
-  color: white;
   font-family: "Helvetica";
   text-align: center;
 }
 
 .orange {
-  background: #f9b4f1;
+  background: var(--primary);
 }
 
 .nosotros {
   width: 100%;
-  height: 50vh;
+  padding: 5em 0;
   text-align: center;
-  padding-top: 150px;
 }
-.nosotros h1 {
-  font-weight: 100;
+.nosotros {
   color: white;
 }
+
+.nosotros h1 {
+  font-weight: 200;
+  margin-bottom: 1em;
+}
+
+.nosotros p {
+  font-size: 20px;
+}
+
 .servicios {
   text-align: center;
-  padding-top: 150px;
-  padding-bottom: 50px;
+  padding: 5em 0;
 }
 .servicios img {
   width: 40%;
@@ -83,7 +68,7 @@ h2 {
 }
 
 .servicios h1 {
-  color: #f9b4f1;
+  color: var(--primary);
   font-weight: 100;
 }
 .servicios .images {
@@ -94,26 +79,14 @@ h2 {
   padding-top: 20px;
 }
 
-.social {
-  text-align: center;
-}
-.social img {
-  width: 30%;
-  text-align: center;
-}
-
-footer {
-  background: #f9b4f1;
-  height: 50vh;
-  padding-top: 30px;
-}
-footer h1 {
-  text-align: center;
-  font-weight: 100;
-}
 
 .col-xs-4 {
   text-align: center;
+}
+
+
+.icon {
+  width: 8em;
 }
 
 /*@media only screen 
@@ -139,11 +112,6 @@ and (max-device-width : 736px) { }
   .botonera li a {
     font-size: 13px;
   }
-  .nosotros {
-    height: 400px;
-    overflow: hidden;
-    padding-top: 15px;
-  }
   #home {
     padding-top: 65px;
   }
@@ -156,3 +124,4 @@ and (max-device-width : 736px) { }
     padding-top: 10px;
   }
 }
+

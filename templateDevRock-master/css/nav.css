@@ -1,23 +1,33 @@
+.vertical-centered-text {
+  -ms-display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-nav {
-    background: linear-gradient(rgba(0, 0, 0, 0.63), transparent);
-    padding-top: 15px;
-    padding-bottom: 10px;
-    position: fixed;
-    width: 100%;
-    z-index: 34242;
+nav .navbar-collapse {
+  justify-content: flex-end;
+}
+
+nav.fixed {
+  background: white;
+}
+
+nav.fixed .logo {
+  display: block;
+  width: 40%;
+}
+
+nav.fixed a {
+  color: var(--primary);
+}
+
+@media only screen and (max-device-width: 480px),
+  only screen and (min-device-width: 560px) and (max-device-width: 1136px) {
+  nav {
+    background-color: white;
   }
-  
-  nav.fixed {
-    background: white;
-  }
-  
   nav.fixed .logo {
-    display: block;
-    width: 3em;
+    width: 60%;
   }
-  
-  nav.fixed a {
-    color: #ff88e1;
-  }
-  
+}

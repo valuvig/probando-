@@ -1,0 +1,18 @@
+footer {
+  background: var(--primary);
+  padding: 5em 0;
+}
+
+footer h1 {
+  text-align: center;
+  font-weight: 100;
+}
+
+.social {
+  text-align: center;
+}
+.social img {
+  width: 20%;
+  margin-top: 5em;
+  text-align: center;
+}
