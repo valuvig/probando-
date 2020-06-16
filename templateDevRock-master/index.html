@@ -1,132 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- Head todo la info que es para el navegador y no se ve, salvo el titulo. -->
-	<meta charset="UTF-8">
-	<title> Tejidos Lali </title>
-	<!-- Estilos de Bootstrap que es codigo responsive y visual ya escrito por otro. -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-	<!-- codigo de colores y estilos escrito por nosotros -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Tipografia openSans -->
-	<link href=" " rel="stylesheet">
-	<!-- esto es para que el navegador se de cuenta cuando estamos en un celuar o tableta-->
-	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <head>
+    <!-- Head todo la info que es para el navegador y no se ve, salvo el titulo. -->
+    <meta charset="UTF-8" />
+    <title>Tejidos Lali</title>
+    <!-- Estilos de Bootstrap que es codigo responsive y visual ya escrito por otro. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"/>
+    <!-- codigo de colores y estilos escrito por nosotros -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/nav.css" />
+    <!-- Tipografia openSans -->
+    <link href=" " rel="stylesheet" />
+    <!-- esto es para que el navegador se de cuenta cuando estamos en un celuar o tableta-->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+  </head>
+  <!-- <body> Todo lo que se ve en la pantalla del usuario -->
+  <body>
+    <nav>
+      <div class="container-fluid">
+        <div class="row top">
+          <!-- en esta linea cambiamos nuestro logo. -->
+          <div class="col-md-3">
+            <a href="#home" data-ancla="home" class="off">
+              <img src="images/logolali.jpg" alt="" class="logo"/></a>
+          </div>
+          <div class="col-md-9 d-flex justify-content-end align-items-center">
+            <ul class="botonera">
+              <li class="m-3">
+                <a href="#nosotros" data-ancla="nosotros"> Nuestra filosofía</a>
+              </li>
+              <li class="m-3">
+                <a href="#servicios" data-ancla="servicios"> Sobre nosotros </a>
+              </li>
+              <li class="m-3">
+                <a href="#contacto" data-ancla="contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-</head>
-<!-- <body> Todo lo que se ve en la pantalla del usuario -->
-<body>
-<header>
-	<div class="container">
-		<div class="row top">
-			<!-- en esta linea cambiamos nuestro logo. -->
-			<div class="col-md-4"><a href="#home" data-ancla="home" class="off">
-				<img src="images/logolali.jpg" alt="" class="logo"></a></div>
-			<div class="col-md-3"></div>
-			<div class="col-md-5">
-				<ul class='botonera'>
-					<li><a href="#nosotros" data-ancla="nosotros"> Nuestra filosofía de trabajo </a></li>
-					<li><a href="#servicios" data-ancla="servicios"> Sobre nosotros </a></li>
-					<li><a href="#contacto" data-ancla="contacto">Contacto</a></li>
+    <header class="vertical-centered-text" id="home">
+		<div class="card flex-column justify-content-center align-items-start p-5">
+			<div class="row m-auto">
 
-				</ul>
-
+				<div class="col-md-9 col-sm-12">
+					<h1>Tejidos Lali</h1>
+					<h4>
+						Somos una empresa familiar de tejidos y crochet ubicada en la zona
+						oeste de buenos aires
+					</h4>
+					<p>Nuestros valores: Confianza, puntualidad, excelencia.</p>
+					<a href="https://www.facebook.com/pg/todo.tejidos.moron/photos/?ref=page_internal" class="btn btn-primary orange" >Mirá nuestras creaciones</a>
+				</div>
+				<div class="col justify-content-center d-flex align-items-center">
+					<img class="header-img" src="./images/tailor.svg">
+				</div>
 			</div>
 		</div>
-	</div>
-</header>
+    </header>
 
-<div class="principal vertical-centered-text" id="home">
- 
-	<div class="col-md-8 cta"><h1>Tejidos Lali</h1> 
-			<h4>Somos una empresa familiar de tejidos y crochet ubicada en la zona oeste de buenos aires</h4>
-			<p> Nuestros valores: Confianza, puntualidad, excelencia. </p>
-<a  href="https://www.facebook.com/pg/todo.tejidos.moron/photos/?ref=page_internal" class="btn btn-primary orange"> Mirá nuestras creaciones </a>
+    <div class="nosotros orange" id="nosotros">
+      <div class="container">
+        <h1>Atención personalizada</h1>
+        <p>
+          Realizamos pedidos personalizados completamente a tu gusto: podes
+          pedirnos algún modelo de la galería o te diseñamos lo que quieras.
+          También podés elegir los colores, y mandarnos medidas para que todo
+          sea exactamente como vos lo querés.
+        </p>
+      </div>
+    </div>
 
+    <div class="container servicios" id="servicios">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Sobre Lali Tejidos</h2>
+        </div>
+      </div>
+      <div class="row images">
+        <div class="col-md-3">
+          <img src="images/box.svg" alt="" />
+          <h3>Nuestros objetivos</h3>
+          <p>
+            En tejidos Lali amamos lo que hacemos y queremos compartirlo con
+            ustedes
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/tailor.svg" alt="" />
+          <h3>Materia prima</h3>
+          <p>
+            Utilizamos las mejores lanas de producción e industria nacional e
+            importadas
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/map.svg" alt="" />
+          <h3>Dónde encontrarnos</h3>
+          <p>
+            Actualmente nos encontramos en la zona oeste: Morón, Castelar,
+            Haedo. Consultanos.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/donation.svg" alt="" />
+          <h3>Por qué elegirnos</h3>
+          <p>
+            Somos una empresa familiar extremadamente puntual y brindamos un
+            servicio personalizado atentiendo todas tus necesidades
+          </p>
+        </div>
+      </div>
+    </div>
 
-		</div>
-</div>
+    <footer>
+      <div class="container" id="contacto">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Contactános</h2>
+          </div>
+        </div>
+        <div class="row social">
+          <div class="col-4">
+            <a href="mailto:crochetsytejidoslali@gmail.com"><img src="images/001-mail.svg" alt=""/></a>
+          </div>
 
-<div class="nosotros orange" id="nosotros">
-	<div class="container">
-		<h1> Atención personalizada </h1>
-		<p>Realizamos pedidos personalizados completamente a tu gusto: podes pedirnos algún modelo de la galería o te diseñamos lo que quieras. También podés elegir los colores, y mandarnos medidas para que todo sea exactamente como vos lo querés. 
+          <div class="col-4">
+            <a href="https://www.facebook.com/todo.tejidos.moron/?__xts__[0]=68.ARCy9Oq2Nf4lf5tNNRYSutwpAT4f8AqX4hr8De5IxvGgWTXlTDHIoPHp15SHv698YUNsYMKWHvhZ5b8VchfXSZ2hpc5NmLY2dgrJbYpDfWgDDhg0pRDqgw2plE8WpxWF4sYMZgLGQJLMq7ODjIdlBwPbs2YMMG5ZpNYQ6lTS4WG1i8VOCNMERlGF-wxVaS2v94Bn0vD5hLJZTUoNUd_iGXGGKGwvaLhtXsqNrEcpxGxg8-dea_3sULgKJBR3CWrMnQgSwVvjlM22DGQDt0ORBDi7-G55Axb_3yiMaWpthF-2DVdld38hcROGwvskjeNa0lLPvKIWXXpvUfJMe0J5tWu4" target="_blank"><img src="images/002-facebook-logo.svg" alt=""/></a>
+          </div>
 
-</p>
-	</div>
-</div>
-
-
-<div class="container servicios" id="servicios">
-	<div class="row">
-		<div class="col-md-12">
-			<h2> Sobre Lali Tejidos </h2>
-		</div>
-	</div>
-	<div class="row images">
-		<div class="col-md-3">
-			<img src="images/box.svg" alt="">
-			<h3> Nuestros objetivos </h3>
-			<p> En tejidos Lali amamos lo que hacemos y queremos compartirlo con ustedes </p>
-		</div>
-		<div class="col-md-3">
-			<img src="images/tailor.svg" alt="">
-			<h3> Materia prima </h3>
-			<p> Utilizamos las mejores lanas de producción e industria nacional e importadas </p>
-		</div>
-		<div class="col-md-3">
-			<img src="images/map.svg" alt="">
-			<h3> Dónde encontrarnos </h3>
-			<p> Actualmente nos encontramos en la zona oeste: Morón, Castelar, Haedo. Consultanos. </p>
-		</div>
-		<div class="col-md-3">
-			<img src="images/donation.svg" alt="">
-			<h3> Por qué elegirnos </h3>
-			<p> Somos una empresa familiar extremadamente puntual y brindamos un servicio personalizado atentiendo todas tus necesidades </p>
-		</div>
-	</div>
-	
-</div>
-
-<footer>
-	<div class="container" id="contacto">
-		<div class="row">
-			<div class="col-md-12">
-					<h2>Contactános</h2><br><br>
-
-			</div>
-		</div>
-		<div class="row social">
-		<div class="col-3"></div>	
-					<div class="col-2">
-						<a href="mailto:crochetsytejidoslali@gmail.com"><img src="images/001-mail.svg" alt=""></a></div>
-
-					<div class="col-2">
-						<a href="https://www.facebook.com/todo.tejidos.moron/?__xts__[0]=68.ARCy9Oq2Nf4lf5tNNRYSutwpAT4f8AqX4hr8De5IxvGgWTXlTDHIoPHp15SHv698YUNsYMKWHvhZ5b8VchfXSZ2hpc5NmLY2dgrJbYpDfWgDDhg0pRDqgw2plE8WpxWF4sYMZgLGQJLMq7ODjIdlBwPbs2YMMG5ZpNYQ6lTS4WG1i8VOCNMERlGF-wxVaS2v94Bn0vD5hLJZTUoNUd_iGXGGKGwvaLhtXsqNrEcpxGxg8-dea_3sULgKJBR3CWrMnQgSwVvjlM22DGQDt0ORBDi7-G55Axb_3yiMaWpthF-2DVdld38hcROGwvskjeNa0lLPvKIWXXpvUfJMe0J5tWu4"  target="_blank"><img src="images/002-facebook-logo.svg" alt=""></a></div>
-
-
-					<div class="col-2">
-						<a target="_blank" href="https://www.instagram.com/tejidosdelali" ><img src="images/003-instagram-social-network-logo-of-photo-camera.svg" alt=""></a></div>	
-	</div>
-</footer>
-<!-- Codigo que hace que las acciones de botones y cuestiones responsive funcionen-->
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-<script>
-	// A $( document ).ready() block.
-$(document).ready(function() {    
-$('.top a').click(function(e){
-        e.preventDefault();
-        var offset = $($(this).attr('href')).offset().top;
-        $('html, body').animate({scrollTop:offset}, 600);
-        return false;
-    });
-
-});
-	
-</script>
+          <div class="col-4">
+            <a target="_blank" href="https://www.instagram.com/tejidosdelali"><img src="images/003-instagram-social-network-logo-of-photo-camera.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Codigo que hace que las acciones de botones y cuestiones responsive funcionen-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

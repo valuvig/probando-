@@ -1,0 +1,23 @@
+
+nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.63), transparent);
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 34242;
+  }
+  
+  nav.fixed {
+    background: white;
+  }
+  
+  nav.fixed .logo {
+    display: block;
+    width: 3em;
+  }
+  
+  nav.fixed a {
+    color: #ff88e1;
+  }
+  
