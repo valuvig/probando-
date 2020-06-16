@@ -1,6 +1,7 @@
 footer {
   background: var(--primary);
   padding: 5em 0;
+  color: white;
 }
 
 footer h1 {

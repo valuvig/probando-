@@ -15,7 +15,7 @@ nav.fixed {
 
 nav.fixed .logo {
   display: block;
-  width: 40%;
+  width: 10em;
 }
 
 nav.fixed a {
